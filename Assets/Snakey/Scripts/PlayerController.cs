@@ -62,8 +62,10 @@ public class PlayerController : NetworkBehaviour
     }
 
     // Client Authoritative Movement
+    // Not Used
     private void MovePlayerClient()
     {
+        /*
         // Movement
         _mouseInput.x = Input.mousePosition.x;
         _mouseInput.y = Input.mousePosition.y;
@@ -81,6 +83,7 @@ public class PlayerController : NetworkBehaviour
             targetDirection.z = 0f;
             transform.up = targetDirection;
         }
+        */
     }
 
     [ServerRpc] // [ServerRpc(RequireOwnership = false)] 
